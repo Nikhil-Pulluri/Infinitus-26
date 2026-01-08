@@ -1,3 +1,7 @@
+/* REMOVE OLD MENU STYLES COMPLETELY */
+/* All old menu styles in the 900px and 500px breakpoints have been removed */
+
+/* KEEP ALL EXISTING NON-MENU RESPONSIVE STYLES */
 @media screen and (max-width: 700px) {
   .navbar-left .nav-link {
     display: none;
@@ -297,54 +301,6 @@
   }
 }
 
-@media screen and (max-width: 900px) {
-  .menu-left {
-    display: none;
-  }
-
-  .menu-right {
-    padding-left: 10%;
-  }
-
-  .menu-close {
-    font-size: 2.3vw;
-  }
-
-  .menu-links-new a {
-    font-size: 28px;
-    line-height: 100%;
-  }
-
-  .menu-links-new-2 a {
-    font-size: 2vw;
-    line-height: 100%;
-  }
-
-  .container {
-    width: 1000%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .menu-close {
-    font-size: 3.5vw;
-  }
-
-  .menu-links-new a {
-    font-size: 25px;
-    line-height: 27px;
-  }
-
-  .menu-links-new-2 a {
-    font-size: 4vw;
-  }
-  .questionItem{
-    font-size: 3.2vw;
-  }
-
-  
-}
-
 /* proshows media queries */
 @media screen and (max-width: 700px) {
   .carousel-item {
@@ -583,4 +539,193 @@
     padding-bottom: 40px;
   }
 
+}
+
+/* NEW MENU RESPONSIVE STYLES - MATCHING LANDING.CSS EXACTLY */
+@media (max-width: 1200px) {
+  .menu-left-item {
+    font-size: 28px;
+  }
+
+  .menu-video-container {
+    height: 280px;
+    max-width: 450px;
+  }
+
+  .menu-bottom-options {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu-content {
+    flex-direction: column;
+  }
+
+  .menu-left {
+    padding: 100px 40px 40px;
+  }
+
+  .menu-right {
+    padding: 40px 40px 60px;
+    align-items: flex-start;
+  }
+
+  .menu-close {
+    top: 20px;
+    right: 40px;
+  }
+
+  .menu-bottom-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .menu-bottom-item {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 15px;
+  }
+
+  .menu-bottom-item:hover {
+    transform: translateX(5px);
+  }
+
+  .menu-bottom-item::after {
+    right: auto;
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 24px;
+  }
+
+  .menu-button {
+    margin-right: 0;
+  }
+
+  .menu-left {
+    padding: 80px 30px 30px;
+  }
+
+  .menu-right {
+    padding: 30px 30px 50px;
+  }
+
+  .menu-close {
+    top: 20px;
+    right: 24px;
+    font-size: 14px;
+  }
+
+  .menu-left-item {
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  .menu-bottom-item {
+    font-size: 18px;
+  }
+
+  .menu-video-container {
+    height: 220px;
+    margin-bottom: 40px;
+  }
+
+  .menu-bottom-options {
+    gap: 15px;
+  }
+
+  /* Remove hover effects for mobile */
+  @media (hover: none) and (pointer: coarse) {
+    .menu-left-item:hover {
+      color: rgba(255, 255, 255, 0.7) !important;
+      transform: none !important;
+    }
+    
+    .menu-bottom-item:hover {
+      color: rgba(255, 255, 255, 0.7) !important;
+      transform: none !important;
+    }
+    
+    .menu-button:hover {
+      color: white !important;
+    }
+    
+    .menu-close:hover {
+      color: white !important;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-left-item {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  .menu-bottom-item {
+    font-size: 16px;
+  }
+
+  .menu-video-container {
+    height: 180px;
+    display: none;
+  }
+
+  .menu-close {
+    top: 15px;
+    right: 20px;
+    font-size: 12px;
+  }
+  
+  /* Remove all hover effects for very small screens */
+  .menu-left-item:hover {
+    color: rgba(255, 255, 255, 0.7) !important;
+    transform: none !important;
+  }
+  
+  .menu-bottom-item:hover {
+    color: rgba(255, 255, 255, 0.7) !important;
+    transform: none !important;
+  }
+  
+  .menu-button:hover {
+    color: white !important;
+  }
+  
+  .menu-close:hover {
+    color: white !important;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Remove hover effects completely on touch devices */
+  .menu-left-item:hover {
+    color: rgba(255, 255, 255, 0.7) !important;
+    transform: none !important;
+  }
+  
+  .menu-bottom-item:hover {
+    color: rgba(255, 255, 255, 0.7) !important;
+    transform: none !important;
+  }
+  
+  .menu-button:hover {
+    color: white !important;
+  }
+  
+  .menu-close:hover {
+    color: white !important;
+  }
+  
+  .register-button:hover {
+    background-color: #9c0808 !important;
+    color: white !important;
+  }
 }
