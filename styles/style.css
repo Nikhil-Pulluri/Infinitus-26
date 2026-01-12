@@ -1382,9 +1382,9 @@ h4 {
   /* Keep slightly above header */
   color: white;
   margin-right: 32px;
-  font-size: 1rem;
+  font-size: 12px;
   letter-spacing: 0.25em;
-  font-family: "VCR", sans-serif;
+  font-family: "Akkurat", sans-serif;
   position: relative;
 }
 
@@ -1642,7 +1642,7 @@ h4 {
   border: none;
   color: white;
   font-family: "VCR", sans-serif;
-  font-size: 1rem;
+  font-size: 12px;
   letter-spacing: 0.25em;
   cursor: pointer;
   padding: 0;
