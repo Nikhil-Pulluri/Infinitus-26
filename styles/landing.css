@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: "./imgs/hero_background.png";
-
 }
 
 body {
@@ -15,7 +13,7 @@ body {
     width: 100vw;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
+
 }
 
 /* .bg-image {
@@ -85,17 +83,17 @@ body {
 .background-image {
     position: absolute;
     inset: 0;
-    background-image: url('/images/hero_background.png');
+    background-image: url('../imgs/hero_background.png');
     background-size: cover;
     background-position: center;
 }
 
-/* .dark-overlay-1,
+.dark-overlay-1,
 .dark-overlay-2 {
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.25);
-} */
+}
 
 /* Noise Effect */
 .noise-container {
@@ -822,7 +820,7 @@ body {
         gap: 15px;
     }
 
-    .coordinates-container{
+    .coordinates-container {
         display: none;
     }
 }
@@ -959,4 +957,95 @@ body {
     color: #fff !important;
 }
 
+/* --- Imported Header Styles --- */
 
+@font-face {
+    font-family: "VCR";
+    src: url("../fonts/VCR-Mono.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Akkurat";
+    src: url("../fonts/Akkurat-Mono.OTF") format("opentype");
+}
+
+.navbar {
+    position: fixed;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: transparent;
+    z-index: 2000;
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+    font-family: "Akkurat", sans-serif;
+    letter-spacing: -0.1px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 30px;
+    cursor: none;
+}
+
+.logo {
+    height: 15px;
+    width: auto;
+}
+
+.nav-link {
+    color: #d9d9d9;
+    text-decoration: none;
+    margin: 0 40px;
+    font-size: 12px;
+    padding: 2px 0px;
+    letter-spacing: -0.1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    z-index: 1000;
+    cursor: none;
+}
+
+.nav-link:hover {
+    color: #8c8c8c;
+}
+
+#timeDisplay {
+    font-family: 'VCR', sans-serif;
+    font-size: 12px;
+}
+
+/* Override menu-button to match style.css */
+.menu-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 2051;
+    color: white;
+    margin-right: 32px;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    font-family: "Akkurat", sans-serif;
+    position: relative;
+}
+
+.menu-button:hover {
+    color: #ff0000 !important;
+}
+
+/* Ensure overlay is above navbar */
+.menu-overlay {
+    z-index: 2100;
+}
