@@ -280,9 +280,10 @@ body {
     right: 100px;
     bottom: 80px;
     z-index: 30;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'JetBrains Mono', 'Space Grotesk', monospace;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 10px;
+    
     background: linear-gradient(to left, rgba(153, 153, 153, 0.75), #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -291,7 +292,7 @@ body {
 
 @media (min-width: 768px) {
     .location-text {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 

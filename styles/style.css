@@ -43,6 +43,11 @@
   src: url("../fonts/Akkurat-Mono.OTF") format("opentype");
 }
 
+@font-face {
+  font-family: "Signature";
+  src: url("../fonts/Signaturae.ttf") format("truetype");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -2123,6 +2128,9 @@ h4 {
   font-family: "Akkurat", sans-serif;
 }
 
+
+
+
 .role {
   font-size: 1vw;
   color: #fdfdfd;
@@ -2131,6 +2139,8 @@ h4 {
   text-align: right;
   /* border-radius: 10px; */
 }
+
+
 
 .card {
   position: absolute;
@@ -2593,11 +2603,13 @@ marquee {
   object-fit: contain;
   text-transform: uppercase;
   color: #fdfdfd;
+  font-size: 0.8vw;
 }
 
 .about-us-para {
   text-transform: uppercase;
   color: #fdfdfd;
+  font-size: 0.8vw;
 }
 
 .about-grid {
@@ -2622,7 +2634,7 @@ marquee {
 
 .about-right p,
 .about-left p {
-  font-size: 0.8vw;
+  
   line-height: 1.5;
   width: 500px;
   z-index: 999;
@@ -2666,4 +2678,12 @@ marquee {
   filter: blur(0.25px);
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+
+.signature{
+  font-family: 'Signature', cursive;
+
+  font-size: 50px;
+
 }
