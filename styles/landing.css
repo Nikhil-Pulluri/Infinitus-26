@@ -283,7 +283,7 @@ body {
     font-family: 'JetBrains Mono', 'Space Grotesk', monospace;
     font-weight: 400;
     font-size: 10px;
-    
+
     background: linear-gradient(to left, rgba(153, 153, 153, 0.75), #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -813,8 +813,7 @@ body {
     }
 
     .menu-video-container {
-        height: 220px;
-        margin-bottom: 40px;
+        display: none !important;
     }
 
     .menu-bottom-options {
@@ -845,8 +844,7 @@ body {
     }
 
     .menu-video-container {
-        height: 180px;
-        display: none;
+        display: none !important;
     }
 
     .menu-close {
